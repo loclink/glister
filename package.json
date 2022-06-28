@@ -17,6 +17,8 @@
     "commander": "^9.3.0",
     "console-table-printer": "^2.11.0",
     "ini": "^3.0.0",
-    "inquirer": "^8.2.4"
+    "inquirer": "^8.2.4",
+    "is-git-repository": "^2.0.0",
+    "shelljs": "^0.8.5"
   }
 }
