@@ -1,0 +1,22 @@
+{
+  "name": "glister",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "gt": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^9.3.0",
+    "console-table-printer": "^2.11.0",
+    "ini": "^3.0.0",
+    "inquirer": "^8.2.4"
+  }
+}
