@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "bin": {
-    "gt": "index.js"
+    "gt": "index.js",
+    "glister": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,6 +17,7 @@
     "chalk": "^4.1.2",
     "commander": "^9.3.0",
     "console-table-printer": "^2.11.0",
+    "dayjs": "^1.11.3",
     "ini": "^3.0.0",
     "inquirer": "^8.2.4",
     "is-git-repository": "^2.0.0",
