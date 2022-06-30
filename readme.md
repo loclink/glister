@@ -1,71 +1,97 @@
 # Glister
 
-![](https://img.shields.io/badge/npm%20package-v0.0.1-yellow)![](https://img.shields.io/badge/node->=16.15.0-blue?color=red&)![](https://img.shields.io/badge/commander-v9.3.0-brightgreen)![](https://img.shields.io/badge/inquirer-v8.2.4-green)
+![](https://img.shields.io/badge/npm%20package-v0.0.1-yellow) ![](https://img.shields.io/badge/node->=16.15.0-blue?color=red&) ![](https://img.shields.io/badge/commander-v9.3.0-brightgreen) ![](https://img.shields.io/badge/inquirer-v8.2.4-green)  
 
-> glister😎 是一款方便管理多个 git 用户和完成其他一些 git 操作的便携工具，它能让你在开源项目和工作项目中自如的切换，如果你还在苦于寻找 git 多用户管理的解决方案，那么请尝试使用 glister 吧~😍。
+> Glister is a handy tool for managing multiple Git users and performing other Git operations. If you're still looking for a solution for managing multiple Git users or switching users, try glister, it allows you to switch between open source and work freely, without cumbersome configuration, without lengthy instructions, all operations will be done interactively in the terminal. :yum:
 >
-> 使用其他语言阅读：
+> Read in other languages: English | 简体中文  :eyes:
 
-## 预览：
+## Preview：
 
-### 1.😺 添加一个 git 用户：
+### 1. 😺 Add a git user:
 
-![动画](https://tva1.sinaimg.cn/large/0087ufIQly1h3qdx6pdw3g30cx0iodil.gif)
+![Peek 2022-07-01 00-24](https://tvax4.sinaimg.cn/large/0087ufIQgy1h3qqfzd7kbg30ov0j8tk1.gif)
 
-### 2. 😿 删除一个 git 用户：
+### 2. 😿 To delete a git users:
 
-![动画2](https://tvax4.sinaimg.cn/large/0087ufIQly1h3qe27abbvg30cx0a7dgq.gif)
+![Peek 2022-07-01 00-26](https://tvax1.sinaimg.cn/large/0087ufIQgy1h3qqhdzg83g30ov0j8kjl.gif)
 
-### 3. 😾 查看用户信息列表：
+### 3. 😾 View the user information list:
 
-![动画3](https://tva2.sinaimg.cn/large/0087ufIQly1h3qe5f6yfeg30cx0a7dg2.gif)
+![Peek 2022-07-01 00-27](https://tva2.sinaimg.cn/large/0087ufIQgy1h3qqibz2u2g30ov0j84mi.gif)
 
-### 4. 😹 使用其他用户：
+### 4. 😹 To use already created users:
 
-![动画4](https://tva2.sinaimg.cn/large/0087ufIQly1h3qecfgdqjg30cx0a7q4i.gif)
+![Peek 2022-07-01 00-28](https://tvax3.sinaimg.cn/large/0087ufIQgy1h3qqjm90l3g30ov0j87wi.gif)
 
-### 5. 😻 为本地仓库新增 git 忽略配置文件：
+### 5. 😻 Use the template for the local warehouse add. gitignore configuration file:
 
-![动画5](https://tva4.sinaimg.cn/large/0087ufIQly1h3qejrapeqg30s50jxnjv.gif)
+![Peek 2022-07-01 00-31](https://tva1.sinaimg.cn/large/0087ufIQgy1h3qqmvnic0g31bh0yr4da.gif)
 
-## 安装：
+## Install:
 
 ```shell
 npm install glister -g
 ```
 
-## 快速开始：
+## Quick start:
 
-先来看看都有哪些指令吧 😬：
+Let's look at what are the instructions :grimacing: :
 
 ```shell
-PS E:\my_project\test-glister> gt --help
+➜  my-project gt --help
 Usage: gt <command> [options]
 
 Options:
-  -v, --version   查看版本号
-  -h, --help      显示命令帮助
+  -v, --version   print version number
+  -h, --help      display help for command
 
 Commands:
-  lan             切换语言
-  list            查看当前用户列表
-  useradd         添加一个新的git用户
-  backup          备份当前正在使用的用户信息
-  rm              删除指定git用户信息
-  use             选择一个用户作为git的global用户
-  ign             为本地git仓库添加忽略文件
-  help [command]  显示子命令帮助信息
+  lan             switch the language
+  list            view current user list
+  useradd         add a new git user
+  backup          backup user information currently in use
+  rm              delete the specified git user information
+  use             select a user as the global user of GIT
+  ign             add ignore file for local git repository
+  help [command]  display subcommand help information
 
 Other:
-  你还可以使用完整指令 "glister" 替代 "gt"
+  You can also use the full command "glister" instead of "gt"
 ```
 
-glister 的默认语言为英文，切换语言可以使用`gt lan`命令，目前仅支持："English"、"简体中文"：
+Glister default language is English, and the `gt lan'`command can be used to switch languages. Currently, only 'English' and 'Simplified Chinese' are supported :sunglasses:：
 
 ```shell
-PS E:\my_project\test-glister> gt lan
-? Please select a language: 简体中文
-语言切换成功，当前语言为：简体中文
+➜  my-project gt lan 
+? 请选择语言： English
+Language switching succeeded. Current language is: English
 ```
 
-如果你正在使用 git 并且已经配置了 global 的 name 和 email，那么在第一次使用 glister 时将会提示您需要备份已经添加的 global 配置信息，以免在下次切换用户时丢失当前用户信息：
+If you are using Git and have already configured, global name and email, the first time you use Glister you will be prompted to back up your current global configuration, to avoid losing global user information the next time you switch users, use `gt backup` to back up the current global user information :eyes:：
+
+![Peek 2022-07-01 00-34](https://tvax3.sinaimg.cn/large/0087ufIQgy1h3qqpocog3g30oc0jb7wh.gif)
+
+## Matters needing attention:
+
+1. When new users, but for the users to add the key, when added to ` id_rsa_ ` joining together the user name of the group as a private key and the public.
+2. Delete operation is not reversible, unable to retrieve user information has been deleted, relationship between the key and user information is not binding, will not delete the delete user information.
+3. Glister check version updates once every 3 days, if there is new version needs you performed manually`npm install glister -g`Update to the latest version.
+
+## Log:
+
+- #### v0.0.1 Update on 2022/6/30:
+
+  - Users to add and delete, and switch the current user.
+  - Print the user list.
+  - For the local warehouse add ignore configuration files.
+
+***
+
+## Contact me:
+
+- QQ：2285088054
+- WX：coder7915
+
+*The project is open source, welcomed the exchange of learning.*
+
