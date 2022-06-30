@@ -22,5 +22,9 @@
     "inquirer": "^8.2.4",
     "is-git-repository": "^2.0.0",
     "shelljs": "^0.8.5"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/loclink/glister/issues"
+  },
+  "homepage": "https://github.com/loclink/glister#readme"
 }

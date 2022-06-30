@@ -3,12 +3,16 @@
 const config = require('./lib/config');
 const { program } = require('commander');
 const { registerCommands } = require('./lib/core/command');
-const { verifyProgramInstruction, verifyVersion } = require('./lib/utils/verify');
+const { helpOptions } = require('./lib/core/help');
+const { verifyProgramInstruction, verifyVersion, verifyBackup } = require('./lib/utils/verify');
 
 const language = config.languageConfig;
 
 // 校验git
 verifyProgramInstruction('git', language.notGit);
+
+// 校验当前用户是否备份
+verifyBackup(language.notBackup);
 
 // 检测版本
 verifyVersion().then(res => {
@@ -20,6 +24,9 @@ verifyVersion().then(res => {
 
   // 自定义子命令的帮助信息描述
   program.addHelpCommand('help [command]', language.helpDescription.helpForCmd);
+
+  // 加载额外的帮助选项
+  helpOptions();
 
   // 注册指令
   registerCommands();
