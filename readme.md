@@ -4,7 +4,7 @@
 
 > Glister is a handy tool for managing multiple Git users and performing other Git operations. If you're still looking for a solution for managing multiple Git users or switching users, try glister, it allows you to switch between open source and work freely, without cumbersome configuration, without lengthy instructions, all operations will be done interactively in the terminal. :yum:
 >
-> Read in other languages: English | 简体中文  :eyes:
+> Read in other languages: English | [简体中文](https://github.com/loclink/glister/blob/master/docs/readme_zh.md)  :eyes:
 
 ## Preview：
 
