@@ -11,11 +11,11 @@ const language = config.languageConfig;
 // 校验git
 verifyProgramInstruction('git', language.notGit);
 
-// 校验当前用户是否备份
-verifyBackup(language.notBackup);
-
 // 检测版本
-verifyVersion().then(res => {
+verifyVersion().then(async res => {
+  // 校验当前用户是否备份
+  await verifyBackup(language.notBackup);
+
   // 查看版本号
   program.version(require('./package.json').version, '-v, --version', language.helpDescription.version);
 
