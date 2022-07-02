@@ -21,6 +21,7 @@
     "ini": "^3.0.0",
     "inquirer": "^8.2.4",
     "is-git-repository": "^2.0.0",
+    "parse-git-config": "^3.0.0",
     "shelljs": "^0.8.5"
   },
   "bugs": {
