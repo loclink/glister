@@ -1,6 +1,6 @@
 # Glister
 
-![](https://img.shields.io/badge/npm%20package-v0.0.3-yellow) ![](https://img.shields.io/badge/node->=16.15.0-blue?color=red&) ![](https://img.shields.io/badge/commander-v9.3.0-brightgreen) ![](https://img.shields.io/badge/inquirer-v8.2.4-green)  
+[![OSCS Status](https://www.oscs1024.com/platform/badge//loclink/glister.git.svg?size=small) ![](https://img.shields.io/badge/npm%20package-v0.0.3-yellow) ![](https://img.shields.io/badge/node->=16.15.0-blue?color=red&) ![](https://img.shields.io/badge/commander-v9.3.0-brightgreen) ![](https://img.shields.io/badge/inquirer-v8.2.4-green)  
 
 > Glister 😎 is an interactive terminal tool for managing multiple Git users and performing other Git operations. If you're still looking for a solution for managing multiple Git users or switching users, try glister, it can help you manage multiple Git users and automatically identify whether the current working directory is a git repository to determine whether user switching affects local or global. It also helps you to create automatically in your project .gitignore file, you can choose to ignore the template based on the language type of the project development, currently supported: `nodejs` `python` `java`
 >

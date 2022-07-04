@@ -1,6 +1,6 @@
 # Glister
 
-![](https://img.shields.io/badge/npm%20package-v0.0.3-yellow?link=https://www.npmjs.com/package/glister) ![](https://img.shields.io/badge/node->=16.15.0-blue?color=red&) ![](https://img.shields.io/badge/commander-v9.3.0-brightgreen) ![](https://img.shields.io/badge/inquirer-v8.2.4-green) ![](https://img.shields.io/badge/chalk-v4.1.2-orange)
+[![OSCS Status](https://www.oscs1024.com/platform/badge//loclink/glister.git.svg?size=small)](https://www.murphysec.com/dr/BllSlCXpWXvAPPjArm) ![](https://img.shields.io/badge/npm%20package-v0.0.3-yellow?link=https://www.npmjs.com/package/glister) ![](https://img.shields.io/badge/node->=16.15.0-blue?color=red&) ![](https://img.shields.io/badge/commander-v9.3.0-brightgreen) ![](https://img.shields.io/badge/inquirer-v8.2.4-green) ![](https://img.shields.io/badge/chalk-v4.1.2-orange)
 
 > Glister 😎 是一款方便管理多个 git 用户和完成其他git操作的交互式终端工具，如果您还在苦于寻找 git 多用户管理或更换用户的解决方案，那么请尝试使用 glister 吧，它可以帮助您管理多个git用户在工作和开源中实现无缝切换，它可以自动识别您当前所在工作目录是否为git仓库，以此来判断用户的应用是影响local还是global。它还能帮助您在项目中自动创建.gitignore文件，您可以根据项目开发的语言类型自行选择忽略模板，目前所支持的有: `nodejs` `python` `java`
 >
