@@ -1,8 +1,8 @@
 # Glister
 
-![](https://img.shields.io/badge/npm%20package-v0.0.1-yellow) ![](https://img.shields.io/badge/node->=16.15.0-blue?color=red&) ![](https://img.shields.io/badge/commander-v9.3.0-brightgreen) ![](https://img.shields.io/badge/inquirer-v8.2.4-green)  
+![](https://img.shields.io/badge/npm%20package-v0.0.3-yellow?link=https://www.npmjs.com/package/glister) ![](https://img.shields.io/badge/node->=16.15.0-blue?color=red&) ![](https://img.shields.io/badge/commander-v9.3.0-brightgreen) ![](https://img.shields.io/badge/inquirer-v8.2.4-green) ![](https://img.shields.io/badge/chalk-v4.1.2-orange)
 
-> Glister 😎 是一款方便管理多个 git 用户和完成其他git操作的交互式终端工具，如果您还在苦于寻找 git 多用户管理或更换用户的解决方案，那么请尝试使用 glister 吧，它可以帮助您管理多个git用户，自动识别当前所在工作目录是否为git仓库，以此来判断用户的切换是影响local还是global。它还能帮助您在项目中自动创建.gitignore文件，您可以根据项目开发的语言类型自行选择忽略模板，目前所支持的有: `nodejs` `python` `java`
+> Glister 😎 是一款方便管理多个 git 用户和完成其他git操作的交互式终端工具，如果您还在苦于寻找 git 多用户管理或更换用户的解决方案，那么请尝试使用 glister 吧，它可以帮助您管理多个git用户在工作和开源中实现无缝切换，它可以自动识别您当前所在工作目录是否为git仓库，以此来判断用户的应用是影响local还是global。它还能帮助您在项目中自动创建.gitignore文件，您可以根据项目开发的语言类型自行选择忽略模板，目前所支持的有: `nodejs` `python` `java`
 >
 > Read in other languages: ：[English](https://github.com/loclink/glister/blob/master/docs/readme_en.md) | 简体中文
 >
@@ -120,6 +120,10 @@ glister允许您随时都可以创建一个新的git用户，创建时您可以�
 2. glister每3天检查一次版本更新，若存在新的版本需要您手动执行`npm install glister -g`更新至最新版。
 
 ## 日志：
+
+- #### v0.0.3更新于2022/07/04
+
+  - 修复了校验新版本错误的bug
 
 - #### v0.0.2更新于2022/07/03
 
